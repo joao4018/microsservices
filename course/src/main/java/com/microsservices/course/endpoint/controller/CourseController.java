@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author William Suane
+ * @author joao4018
  */
 @RestController
 @RequestMapping("v1/admin/course")
