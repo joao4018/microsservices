@@ -1,10 +1,10 @@
-//package com.microsservices.discovery;
+//package com.microsservices.gateway;
 //
 //import org.junit.jupiter.api.Test;
 //import org.springframework.boot.test.context.SpringBootTest;
 //
 //@SpringBootTest
-//class DiscoveryApplicationTests {
+//class GatewayApplicationTests {
 //
 //    @Test
 //    void contextLoads() {
