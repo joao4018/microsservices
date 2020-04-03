@@ -1,7 +1,7 @@
 package com.microsservices.course.endpoint.service;
 
-import com.microsservices.course.model.Course;
-import com.microsservices.course.repository.CourseRepository;
+import com.microsservices.core.model.Course;
+import com.microsservices.core.repository.CourseRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
