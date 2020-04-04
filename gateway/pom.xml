@@ -12,14 +12,26 @@
     <artifactId>gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>gateway</name>
-    <description>Gateway</description>
+    <description>DevDojo's Gateway</description>
 
     <properties>
         <java.version>11</java.version>
+        <micro-token.version>1.0-SNAPSHOT</micro-token.version>
+        <micro-core.version>1.0-SNAPSHOT</micro-core.version>
+
     </properties>
 
     <dependencies>
-
+        <dependency>
+            <groupId>com.microsservices</groupId>
+            <artifactId>token</artifactId>
+            <version>${micro-token.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.microsservices</groupId>
+            <artifactId>core</artifactId>
+            <version>${micro-core.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
