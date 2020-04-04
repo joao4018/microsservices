@@ -9,7 +9,7 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
 /**
- * @author William Suane
+ * @author joao4018
  */
 public class BaseSwaggerConfig {
     private final String basePackage;
