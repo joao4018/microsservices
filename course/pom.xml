@@ -9,20 +9,28 @@
         <relativePath>../</relativePath> <!-- lookup parent from repository -->
     </parent>
 
+
     <artifactId>course</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>course</name>
-    <description>Learn Spring boot with microsservices</description>
+    <description>Spring Boot Micro-services By DevDojo</description>
 
     <properties>
         <java.version>11</java.version>
+        <micro-core.version>1.0-SNAPSHOT</micro-core.version>
+        <micro-token.version>1.0-SNAPSHOT</micro-token.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.microsservices</groupId>
+            <artifactId>token</artifactId>
+            <version>${micro-token.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.microsservices</groupId>
             <artifactId>core</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${micro-core.version}</version>
         </dependency>
     </dependencies>
 
