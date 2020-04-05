@@ -7,12 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="gateway" />
+        <module name="discovery" />
         <module name="token" />
         <module name="auth" />
+        <module name="gateway" />
         <module name="course" />
         <module name="core" />
-        <module name="discovery" />
+        <module name="encrypter" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,6 +21,7 @@
       <module name="core" target="1.8" />
       <module name="course" target="11" />
       <module name="discovery" target="11" />
+      <module name="encrypter" target="11" />
       <module name="gateway" target="11" />
       <module name="Microsservices" target="1.8" />
       <module name="token" target="11" />
@@ -31,6 +33,7 @@
       <module name="core" options="-parameters" />
       <module name="course" options="-parameters" />
       <module name="discovery" options="-parameters" />
+      <module name="encrypter" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="token" options="-parameters" />
     </option>

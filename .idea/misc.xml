@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/auth/pom.xml" />
         <option value="$PROJECT_DIR$/token/pom.xml" />
+        <option value="$PROJECT_DIR$/encrypter/pom.xml" />
       </list>
     </option>
   </component>
