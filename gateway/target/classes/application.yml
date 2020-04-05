@@ -18,3 +18,12 @@ eureka:
 
 zuul:
   sensitive-headers: Cookie
+
+jwt:
+  config:
+    login-url: /auth/login
+    type: signed
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeour: 10000
