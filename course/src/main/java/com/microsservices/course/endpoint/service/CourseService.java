@@ -21,4 +21,9 @@ public class CourseService {
         log.info("Listing all courses");
         return courseRepository.findAll(pageable);
     }
+
+    public Course save(Course pageable) {
+        log.info("Listing all courses");
+        return courseRepository.save(pageable);
+    }
 }

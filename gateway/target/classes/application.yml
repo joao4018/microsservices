@@ -18,7 +18,7 @@ eureka:
 
 zuul:
   sensitive-headers: Cookie
-
+# Apenas assinador para aumentar a seguranca e encryptar o codigo basta retirar o type de todos servicos
 jwt:
   config:
     login-url: /auth/login
