@@ -75,7 +75,7 @@ public class TokenCreator {
                         .map(GrantedAuthority::getAuthority)
                         .collect(toList()))
                 .claim("userId", applicationUser.getId())
-                .issuer("http://academy.devdojo")
+                .issuer("www.ae.com")
                 .issueTime(new Date())
                 .expirationTime(new Date(System.currentTimeMillis() + (jwtConfiguration.getExpiration() * 1000)))
                 .build();
