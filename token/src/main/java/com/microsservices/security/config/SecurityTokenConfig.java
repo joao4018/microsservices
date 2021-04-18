@@ -31,13 +31,14 @@ public class SecurityTokenConfig extends WebSecurityConfigurerAdapter {
                 .exceptionHandling().authenticationEntryPoint((req, resp, e) -> resp.sendError(HttpServletResponse.SC_UNAUTHORIZED))
                 .and()
                 .authorizeRequests()
-                .antMatchers(HttpMethod.POST,"/auth/user/signup").permitAll()
+                .antMatchers(HttpMethod.POST,"*/user/signup").permitAll()
                 .antMatchers().permitAll()
                 .antMatchers(jwtConfiguration.getLoginUrl(), "/**/swagger-ui.html").permitAll()
                 .antMatchers(HttpMethod.GET, "/**/swagger-resources/**", "/**/webjars/springfox-swagger-ui/**", "/**/v2/api-docs/**").permitAll()
-                .antMatchers("/course/v1/admin/**").hasRole("ADMIN")
+                .antMatchers(HttpMethod.POST, "/**/swagger-resources/**", "/**/webjars/springfox-swagger-ui/**", "/**/v2/api-docs/**").permitAll()
+                .antMatchers("/course/v1/admin/**").hasRole("ADMIN");
 //                .antMatchers("/auth/user/**").hasAnyRole("ADMIN", "USER")
-                .anyRequest().authenticated();
+ //               .anyRequest().authenticated();
     }
 
 

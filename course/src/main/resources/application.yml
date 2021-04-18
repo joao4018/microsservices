@@ -30,6 +30,52 @@ jwt:
   config:
     type: signed
 
+#
+#
+#server:
+#  port: 8082
+#
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8081/eureka/
+#    register-with-eureka: true
+#
+#spring:
+#  h2:
+#    console:
+#      enabled: true
+#      path: /h2
+#  application:
+#    name: course
+#  jpa:
+#    show-sql: false
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL8Dialect
+#  jmx:
+#    enabled: false
+#  datasource:
+#    url: jdbc:h2:mem:~/test?allowPublicKeyRetrieval=true&sslMode=DISABLED&useTimezone=true&serverTimezone=UTC
+#    username: sa
+#    password:
+#    driverClassName: org.h2.Driver
+#
+#jwt:
+#  config:
+#    type: signed
+#
+#
+#
+#
+#
+#
+#
+#
 
 
 
